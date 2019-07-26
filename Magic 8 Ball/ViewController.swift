@@ -9,8 +9,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-    // Declare an image name strings collection.
-    let ballArray = ["ball1", "ball2", "ball3", "ball4", "ball5"]
     // Declare the index image number.
     var ballIndexImage : Int = 0
     // Declare the ui image view.
@@ -39,7 +37,7 @@ class ViewController: UIViewController {
         // Get a random integer (0...4).
         ballIndexImage = Int(arc4random_uniform(5))
         // Assign it as the name of the UIImage 'image' property.
-        ballImage.image = UIImage(named: ballArray[ballIndexImage])
+        ballImage.image = UIImage(named: "ball\(ballIndexImage+1)")
     }
     
 }
