@@ -37,7 +37,7 @@ class ViewController: UIViewController {
     // Randomly changes the image ball.
     func newBallImage(){
         // Get a random integer (0...4).
-        ballIndexImage = Int(arc4random_uniform(4))
+        ballIndexImage = Int(arc4random_uniform(5))
         // Assign it as the name of the UIImage 'image' property.
         ballImage.image = UIImage(named: ballArray[ballIndexImage])
     }
