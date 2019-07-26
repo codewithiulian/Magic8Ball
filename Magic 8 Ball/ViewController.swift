@@ -28,6 +28,12 @@ class ViewController: UIViewController {
         newBallImage()
     }
     
+    // Motion detection (when shake ended) callback.
+    override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
+        // Change the ball image.
+        newBallImage()
+    }
+    
     // Randomly changes the image ball.
     func newBallImage(){
         // Get a random integer (0...4).
